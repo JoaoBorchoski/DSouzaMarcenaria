@@ -1,7 +1,6 @@
 import AppDataSource from "../../data-source";
 import Order from "../../entities/orders.entity";
 import { iOrderRepo } from "../../interfaces/order.interface";
-import { returnOrderMultiplesSchema } from "../../schemas/order.schema";
 
 const listOrderService = async () => {
     const orderRepo: iOrderRepo = AppDataSource.getRepository(Order);

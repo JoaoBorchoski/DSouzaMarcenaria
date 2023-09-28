@@ -8,7 +8,7 @@ class Client {
     @Column({ length: 127 })
     name: string;
 
-    @Column({ length: 127 })
+    @Column({ length: 127, unique: true })
     phone: string;
 
     @Column({ length: 127, unique: true })

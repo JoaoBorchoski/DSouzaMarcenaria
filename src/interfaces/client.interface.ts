@@ -13,6 +13,8 @@ type iClientRepo = Repository<Client>;
 type iClientUpdate = {
     nome: string;
     email: string;
+    phone: string;
+    address: string;
 };
 
 export type { iCreateClient, iReturnClient, iClientRepo, iClientUpdate };

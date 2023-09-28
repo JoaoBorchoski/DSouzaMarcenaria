@@ -22,6 +22,15 @@ const returnOrderSchema = createOrderSchema.extend({
     }),
 });
 
+const updateOrderSchema = z.object({
+    is_finished: z.boolean(),
+});
+
 const returnOrderMultiplesSchema = returnOrderSchema.array();
 
-export { createOrderSchema, returnOrderSchema, returnOrderMultiplesSchema };
+export {
+    createOrderSchema,
+    returnOrderSchema,
+    updateOrderSchema,
+    returnOrderMultiplesSchema,
+};

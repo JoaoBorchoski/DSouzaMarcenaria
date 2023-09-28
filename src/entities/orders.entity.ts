@@ -26,7 +26,7 @@ class Order {
     order_date: string;
 
     @Column({ type: "date" })
-    delivery_date: string;
+    delivery_date: Date;
 
     @Column({ type: "date" })
     payment_deadline: string;
