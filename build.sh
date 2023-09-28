@@ -3,4 +3,4 @@
 set -o errexit
 
 npm run build
-npm run typeorm migration:run -d dist/data-source
+npm run typeorm migration:run -- -d dist/data-source
